@@ -1,0 +1,586 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9418EC5C1D2F30C6009493FA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9418EC5B1D2F30C6009493FA /* AppDelegate.swift */; };
+		9418EC5E1D2F30C6009493FA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9418EC5D1D2F30C6009493FA /* ViewController.swift */; };
+		9418EC611D2F30C6009493FA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9418EC5F1D2F30C6009493FA /* Main.storyboard */; };
+		9418EC631D2F30C6009493FA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9418EC621D2F30C6009493FA /* Assets.xcassets */; };
+		9418EC661D2F30C6009493FA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9418EC641D2F30C6009493FA /* LaunchScreen.storyboard */; };
+		9418EC711D2F30C7009493FA /* udacityProjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9418EC701D2F30C7009493FA /* udacityProjectTests.swift */; };
+		9418EC7C1D2F30C7009493FA /* udacityProjectUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9418EC7B1D2F30C7009493FA /* udacityProjectUITests.swift */; };
+		9418EC8D1D2F33F0009493FA /* YTPlayerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9418EC8C1D2F33F0009493FA /* YTPlayerView.m */; };
+		9439C74D1D3097C30091118B /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9439C74B1D3097C30091118B /* Model.xcdatamodeld */; };
+		9439C7501D3098E00091118B /* PlaylistVideo+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9439C74E1D3098E00091118B /* PlaylistVideo+CoreDataProperties.swift */; };
+		9439C7511D3098E00091118B /* PlaylistVideo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9439C74F1D3098E00091118B /* PlaylistVideo.swift */; };
+		9439C7541D309B5E0091118B /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9439C7531D309B5E0091118B /* CoreDataStack.swift */; };
+		9439C7561D309C700091118B /* PlaylistTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9439C7551D309C700091118B /* PlaylistTableViewController.swift */; };
+		946E8D311D2F486D0068A0BE /* Assets in Resources */ = {isa = PBXBuildFile; fileRef = 946E8D301D2F486D0068A0BE /* Assets */; };
+		94E616891D302D4200D7B9A7 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94E616881D302D4200D7B9A7 /* TableViewController.swift */; };
+		94E6168B1D3030CD00D7B9A7 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94E6168A1D3030CD00D7B9A7 /* SearchViewController.swift */; };
+		94E6168D1D30376A00D7B9A7 /* YoutubeData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94E6168C1D30376A00D7B9A7 /* YoutubeData.swift */; };
+		94E6168F1D303EA400D7B9A7 /* videoInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94E6168E1D303EA400D7B9A7 /* videoInfo.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9418EC6D1D2F30C7009493FA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9418EC501D2F30C6009493FA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9418EC571D2F30C6009493FA;
+			remoteInfo = udacityProject;
+		};
+		9418EC781D2F30C7009493FA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9418EC501D2F30C6009493FA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9418EC571D2F30C6009493FA;
+			remoteInfo = udacityProject;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		9418EC581D2F30C6009493FA /* udacityProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = udacityProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9418EC5B1D2F30C6009493FA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		9418EC5D1D2F30C6009493FA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		9418EC601D2F30C6009493FA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9418EC621D2F30C6009493FA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9418EC651D2F30C6009493FA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		9418EC671D2F30C6009493FA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9418EC6C1D2F30C7009493FA /* udacityProjectTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = udacityProjectTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9418EC701D2F30C7009493FA /* udacityProjectTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = udacityProjectTests.swift; sourceTree = "<group>"; };
+		9418EC721D2F30C7009493FA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9418EC771D2F30C7009493FA /* udacityProjectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = udacityProjectUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9418EC7B1D2F30C7009493FA /* udacityProjectUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = udacityProjectUITests.swift; sourceTree = "<group>"; };
+		9418EC7D1D2F30C7009493FA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9418EC8B1D2F33F0009493FA /* udacityProject-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "udacityProject-Bridging-Header.h"; sourceTree = "<group>"; };
+		9418EC8C1D2F33F0009493FA /* YTPlayerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = YTPlayerView.m; path = /Users/Ryan/Desktop/udacityProject/udacityProject/YTPlayerView.m; sourceTree = "<absolute>"; };
+		9439C74C1D3097C30091118B /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
+		9439C74E1D3098E00091118B /* PlaylistVideo+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "PlaylistVideo+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		9439C74F1D3098E00091118B /* PlaylistVideo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaylistVideo.swift; sourceTree = "<group>"; };
+		9439C7531D309B5E0091118B /* CoreDataStack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
+		9439C7551D309C700091118B /* PlaylistTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaylistTableViewController.swift; sourceTree = "<group>"; };
+		946E8D301D2F486D0068A0BE /* Assets */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Assets; sourceTree = "<group>"; };
+		946E8D321D2F487F0068A0BE /* YTPlayerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YTPlayerView.h; sourceTree = "<group>"; };
+		946E8D331D2F487F0068A0BE /* YTPlayerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YTPlayerView.m; sourceTree = "<group>"; };
+		94E616881D302D4200D7B9A7 /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		94E6168A1D3030CD00D7B9A7 /* SearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		94E6168C1D30376A00D7B9A7 /* YoutubeData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YoutubeData.swift; sourceTree = "<group>"; };
+		94E6168E1D303EA400D7B9A7 /* videoInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = videoInfo.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9418EC551D2F30C6009493FA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9418EC691D2F30C7009493FA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9418EC741D2F30C7009493FA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9418EC4F1D2F30C6009493FA = {
+			isa = PBXGroup;
+			children = (
+				9418EC5A1D2F30C6009493FA /* udacityProject */,
+				9418EC6F1D2F30C7009493FA /* udacityProjectTests */,
+				9418EC7A1D2F30C7009493FA /* udacityProjectUITests */,
+				9418EC591D2F30C6009493FA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9418EC591D2F30C6009493FA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9418EC581D2F30C6009493FA /* udacityProject.app */,
+				9418EC6C1D2F30C7009493FA /* udacityProjectTests.xctest */,
+				9418EC771D2F30C7009493FA /* udacityProjectUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9418EC5A1D2F30C6009493FA /* udacityProject */ = {
+			isa = PBXGroup;
+			children = (
+				9439C7521D3098ED0091118B /* Model */,
+				9418EC5B1D2F30C6009493FA /* AppDelegate.swift */,
+				9418EC5D1D2F30C6009493FA /* ViewController.swift */,
+				94E6168A1D3030CD00D7B9A7 /* SearchViewController.swift */,
+				94E616881D302D4200D7B9A7 /* TableViewController.swift */,
+				9439C7551D309C700091118B /* PlaylistTableViewController.swift */,
+				94E6168C1D30376A00D7B9A7 /* YoutubeData.swift */,
+				94E6168E1D303EA400D7B9A7 /* videoInfo.swift */,
+				9439C74B1D3097C30091118B /* Model.xcdatamodeld */,
+				9418EC5F1D2F30C6009493FA /* Main.storyboard */,
+				9418EC621D2F30C6009493FA /* Assets.xcassets */,
+				946E8D321D2F487F0068A0BE /* YTPlayerView.h */,
+				946E8D331D2F487F0068A0BE /* YTPlayerView.m */,
+				946E8D301D2F486D0068A0BE /* Assets */,
+				9418EC641D2F30C6009493FA /* LaunchScreen.storyboard */,
+				9418EC671D2F30C6009493FA /* Info.plist */,
+				9418EC8B1D2F33F0009493FA /* udacityProject-Bridging-Header.h */,
+			);
+			path = udacityProject;
+			sourceTree = "<group>";
+		};
+		9418EC6F1D2F30C7009493FA /* udacityProjectTests */ = {
+			isa = PBXGroup;
+			children = (
+				9418EC701D2F30C7009493FA /* udacityProjectTests.swift */,
+				9418EC721D2F30C7009493FA /* Info.plist */,
+			);
+			path = udacityProjectTests;
+			sourceTree = "<group>";
+		};
+		9418EC7A1D2F30C7009493FA /* udacityProjectUITests */ = {
+			isa = PBXGroup;
+			children = (
+				9418EC7B1D2F30C7009493FA /* udacityProjectUITests.swift */,
+				9418EC7D1D2F30C7009493FA /* Info.plist */,
+			);
+			path = udacityProjectUITests;
+			sourceTree = "<group>";
+		};
+		9439C7521D3098ED0091118B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				9439C74E1D3098E00091118B /* PlaylistVideo+CoreDataProperties.swift */,
+				9439C74F1D3098E00091118B /* PlaylistVideo.swift */,
+				9439C7531D309B5E0091118B /* CoreDataStack.swift */,
+			);
+			name = Model;
+			path = ..;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9418EC571D2F30C6009493FA /* udacityProject */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9418EC801D2F30C7009493FA /* Build configuration list for PBXNativeTarget "udacityProject" */;
+			buildPhases = (
+				9418EC541D2F30C6009493FA /* Sources */,
+				9418EC551D2F30C6009493FA /* Frameworks */,
+				9418EC561D2F30C6009493FA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = udacityProject;
+			productName = udacityProject;
+			productReference = 9418EC581D2F30C6009493FA /* udacityProject.app */;
+			productType = "com.apple.product-type.application";
+		};
+		9418EC6B1D2F30C7009493FA /* udacityProjectTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9418EC831D2F30C7009493FA /* Build configuration list for PBXNativeTarget "udacityProjectTests" */;
+			buildPhases = (
+				9418EC681D2F30C7009493FA /* Sources */,
+				9418EC691D2F30C7009493FA /* Frameworks */,
+				9418EC6A1D2F30C7009493FA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9418EC6E1D2F30C7009493FA /* PBXTargetDependency */,
+			);
+			name = udacityProjectTests;
+			productName = udacityProjectTests;
+			productReference = 9418EC6C1D2F30C7009493FA /* udacityProjectTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		9418EC761D2F30C7009493FA /* udacityProjectUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9418EC861D2F30C7009493FA /* Build configuration list for PBXNativeTarget "udacityProjectUITests" */;
+			buildPhases = (
+				9418EC731D2F30C7009493FA /* Sources */,
+				9418EC741D2F30C7009493FA /* Frameworks */,
+				9418EC751D2F30C7009493FA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9418EC791D2F30C7009493FA /* PBXTargetDependency */,
+			);
+			name = udacityProjectUITests;
+			productName = udacityProjectUITests;
+			productReference = 9418EC771D2F30C7009493FA /* udacityProjectUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9418EC501D2F30C6009493FA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "Ryan Ballenger";
+				TargetAttributes = {
+					9418EC571D2F30C6009493FA = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+					9418EC6B1D2F30C7009493FA = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = 9418EC571D2F30C6009493FA;
+					};
+					9418EC761D2F30C7009493FA = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = 9418EC571D2F30C6009493FA;
+					};
+				};
+			};
+			buildConfigurationList = 9418EC531D2F30C6009493FA /* Build configuration list for PBXProject "udacityProject" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9418EC4F1D2F30C6009493FA;
+			productRefGroup = 9418EC591D2F30C6009493FA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9418EC571D2F30C6009493FA /* udacityProject */,
+				9418EC6B1D2F30C7009493FA /* udacityProjectTests */,
+				9418EC761D2F30C7009493FA /* udacityProjectUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9418EC561D2F30C6009493FA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9418EC661D2F30C6009493FA /* LaunchScreen.storyboard in Resources */,
+				946E8D311D2F486D0068A0BE /* Assets in Resources */,
+				9418EC631D2F30C6009493FA /* Assets.xcassets in Resources */,
+				9418EC611D2F30C6009493FA /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9418EC6A1D2F30C7009493FA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9418EC751D2F30C7009493FA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9418EC541D2F30C6009493FA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				94E6168F1D303EA400D7B9A7 /* videoInfo.swift in Sources */,
+				94E6168B1D3030CD00D7B9A7 /* SearchViewController.swift in Sources */,
+				9439C7501D3098E00091118B /* PlaylistVideo+CoreDataProperties.swift in Sources */,
+				94E6168D1D30376A00D7B9A7 /* YoutubeData.swift in Sources */,
+				9439C74D1D3097C30091118B /* Model.xcdatamodeld in Sources */,
+				9418EC5E1D2F30C6009493FA /* ViewController.swift in Sources */,
+				9439C7541D309B5E0091118B /* CoreDataStack.swift in Sources */,
+				9439C7561D309C700091118B /* PlaylistTableViewController.swift in Sources */,
+				9418EC5C1D2F30C6009493FA /* AppDelegate.swift in Sources */,
+				9439C7511D3098E00091118B /* PlaylistVideo.swift in Sources */,
+				9418EC8D1D2F33F0009493FA /* YTPlayerView.m in Sources */,
+				94E616891D302D4200D7B9A7 /* TableViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9418EC681D2F30C7009493FA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9418EC711D2F30C7009493FA /* udacityProjectTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9418EC731D2F30C7009493FA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9418EC7C1D2F30C7009493FA /* udacityProjectUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9418EC6E1D2F30C7009493FA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9418EC571D2F30C6009493FA /* udacityProject */;
+			targetProxy = 9418EC6D1D2F30C7009493FA /* PBXContainerItemProxy */;
+		};
+		9418EC791D2F30C7009493FA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9418EC571D2F30C6009493FA /* udacityProject */;
+			targetProxy = 9418EC781D2F30C7009493FA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		9418EC5F1D2F30C6009493FA /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9418EC601D2F30C6009493FA /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		9418EC641D2F30C6009493FA /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9418EC651D2F30C6009493FA /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9418EC7E1D2F30C7009493FA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9418EC7F1D2F30C7009493FA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9418EC811D2F30C7009493FA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				INFOPLIST_FILE = udacityProject/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ios.udacityProject;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "udacityProject/udacityProject-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		9418EC821D2F30C7009493FA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				INFOPLIST_FILE = udacityProject/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ios.udacityProject;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "udacityProject/udacityProject-Bridging-Header.h";
+			};
+			name = Release;
+		};
+		9418EC841D2F30C7009493FA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = udacityProjectTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ios.udacityProjectTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/udacityProject.app/udacityProject";
+			};
+			name = Debug;
+		};
+		9418EC851D2F30C7009493FA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = udacityProjectTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ios.udacityProjectTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/udacityProject.app/udacityProject";
+			};
+			name = Release;
+		};
+		9418EC871D2F30C7009493FA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = udacityProjectUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ios.udacityProjectUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = udacityProject;
+			};
+			name = Debug;
+		};
+		9418EC881D2F30C7009493FA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = udacityProjectUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ios.udacityProjectUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = udacityProject;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9418EC531D2F30C6009493FA /* Build configuration list for PBXProject "udacityProject" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9418EC7E1D2F30C7009493FA /* Debug */,
+				9418EC7F1D2F30C7009493FA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9418EC801D2F30C7009493FA /* Build configuration list for PBXNativeTarget "udacityProject" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9418EC811D2F30C7009493FA /* Debug */,
+				9418EC821D2F30C7009493FA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9418EC831D2F30C7009493FA /* Build configuration list for PBXNativeTarget "udacityProjectTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9418EC841D2F30C7009493FA /* Debug */,
+				9418EC851D2F30C7009493FA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9418EC861D2F30C7009493FA /* Build configuration list for PBXNativeTarget "udacityProjectUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9418EC871D2F30C7009493FA /* Debug */,
+				9418EC881D2F30C7009493FA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		9439C74B1D3097C30091118B /* Model.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				9439C74C1D3097C30091118B /* Model.xcdatamodel */,
+			);
+			currentVersion = 9439C74C1D3097C30091118B /* Model.xcdatamodel */;
+			path = Model.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 9418EC501D2F30C6009493FA /* Project object */;
+}

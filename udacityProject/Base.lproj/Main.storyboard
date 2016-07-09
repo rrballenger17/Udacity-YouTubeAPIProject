@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="P5N-p9-DEz">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="hcq-ba-01k">
+            <objects>
+                <navigationController id="P5N-p9-DEz" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="gYM-cS-3gG">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="Wfh-k6-Xsf" kind="relationship" relationship="rootViewController" id="1V9-VG-cyb"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Bee-13-UqM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-486" y="74"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="PlayView" id="BYZ-38-t0r" customClass="ViewController" customModule="udacityProject" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KHP-tg-pPr" customClass="YTPlayerView">
+                                <rect key="frame" x="20" y="20" width="560" height="300"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mPE-1D-T0i">
+                                <rect key="frame" x="20" y="401" width="98" height="30"/>
+                                <state key="normal" title="Add to Playlist"/>
+                                <connections>
+                                    <action selector="addToPlaylist:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6QL-Uu-eI7"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="mPE-1D-T0i" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="8RR-5R-L1p"/>
+                            <constraint firstItem="mPE-1D-T0i" firstAttribute="top" secondItem="KHP-tg-pPr" secondAttribute="bottom" constant="40" id="HbE-hI-e4v"/>
+                            <constraint firstItem="KHP-tg-pPr" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="NLD-ch-hWb"/>
+                            <constraint firstItem="KHP-tg-pPr" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="NeG-i4-gw8"/>
+                            <constraint firstItem="KHP-tg-pPr" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.5" id="cJH-4i-U2O"/>
+                            <constraint firstItem="KHP-tg-pPr" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="eYi-gP-Lpk"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="V90-ks-q3Y"/>
+                    <connections>
+                        <outlet property="playerView" destination="KHP-tg-pPr" id="zOj-ux-Ghj"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="839" y="-555"/>
+        </scene>
+        <!--Search View Controller-->
+        <scene sceneID="mXG-8H-pDb">
+            <objects>
+                <viewController id="Wfh-k6-Xsf" customClass="SearchViewController" customModule="udacityProject" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Gag-8k-VSM"/>
+                        <viewControllerLayoutGuide type="bottom" id="xBk-sF-0zd"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Lvt-gB-n8r" customClass="Searc">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Youtube Video Search and Local Playlist" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vjk-Kb-yov" userLabel="title">
+                                <rect key="frame" x="42" y="180" width="360" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dTa-ln-3FT">
+                                <rect key="frame" x="42" y="285" width="510" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y3m-Hy-Osc">
+                                <rect key="frame" x="509" y="336" width="49" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="Eer-Ak-Ivy"/>
+                                    <constraint firstAttribute="width" constant="49" id="Pk1-45-Qm2"/>
+                                    <constraint firstAttribute="height" constant="30" id="l5Z-nD-j4r"/>
+                                </constraints>
+                                <state key="normal" title="Playlist"/>
+                                <connections>
+                                    <segue destination="LhV-TH-ey1" kind="show" id="ceE-h7-Bfq"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EpR-m4-Q21">
+                                <rect key="frame" x="42" y="336" width="48" height="30"/>
+                                <state key="normal" title="Search"/>
+                                <connections>
+                                    <action selector="doSearch:" destination="Wfh-k6-Xsf" eventType="touchUpInside" id="7RH-Us-g8m"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="dTa-ln-3FT" firstAttribute="top" secondItem="vjk-Kb-yov" secondAttribute="bottom" constant="84" id="1l0-G1-e5y"/>
+                            <constraint firstItem="y3m-Hy-Osc" firstAttribute="top" secondItem="dTa-ln-3FT" secondAttribute="bottom" constant="21" id="6nG-Yq-AZD"/>
+                            <constraint firstItem="EpR-m4-Q21" firstAttribute="top" secondItem="dTa-ln-3FT" secondAttribute="bottom" constant="21" id="F1j-FG-JW8"/>
+                            <constraint firstItem="dTa-ln-3FT" firstAttribute="leading" secondItem="Lvt-gB-n8r" secondAttribute="leadingMargin" constant="22" id="Xx0-N9-tFv"/>
+                            <constraint firstItem="dTa-ln-3FT" firstAttribute="width" secondItem="Lvt-gB-n8r" secondAttribute="width" multiplier="0.85" id="fr5-wb-pGL"/>
+                            <constraint firstItem="vjk-Kb-yov" firstAttribute="leading" secondItem="Lvt-gB-n8r" secondAttribute="leadingMargin" constant="22" id="ibg-AU-uAs"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="y3m-Hy-Osc" secondAttribute="trailing" constant="22" id="ji1-5f-QuY"/>
+                            <constraint firstItem="dTa-ln-3FT" firstAttribute="centerY" secondItem="Lvt-gB-n8r" secondAttribute="centerY" id="p7i-9D-5v7"/>
+                            <constraint firstItem="EpR-m4-Q21" firstAttribute="leading" secondItem="Lvt-gB-n8r" secondAttribute="leadingMargin" constant="22" id="pc1-Qi-2tk"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="XXP-Gf-moz"/>
+                    <connections>
+                        <outlet property="label" destination="vjk-Kb-yov" id="vRJ-G4-orJ"/>
+                        <outlet property="searchText" destination="dTa-ln-3FT" id="toZ-pX-tgg"/>
+                        <segue destination="xTZ-Xu-POE" kind="show" identifier="resultsSegue" id="RrD-Dj-fKS"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EC0-U8-jmh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="280" y="128"/>
+        </scene>
+        <!--Playlist Table View Controller-->
+        <scene sceneID="4r1-Zq-h5M">
+            <objects>
+                <tableViewController id="LhV-TH-ey1" customClass="PlaylistTableViewController" customModule="udacityProject" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="pN3-ba-HWo">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="MyCellReuseIdentifier" id="NaF-CV-7tT">
+                                <rect key="frame" x="0.0" y="92" width="600" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="NaF-CV-7tT" id="MdV-JU-UYK">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="LhV-TH-ey1" id="OuI-xR-fvt"/>
+                            <outlet property="delegate" destination="LhV-TH-ey1" id="ZbL-lK-ny8"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LTT-Xh-ZF4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="220" y="916"/>
+        </scene>
+        <!--Table View Controller-->
+        <scene sceneID="x2M-3w-VAi">
+            <objects>
+                <tableViewController storyboardIdentifier="TableView" id="xTZ-Xu-POE" customClass="TableViewController" customModule="udacityProject" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="ypf-RY-lPl">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="MyCellReuseIdentifier" id="Pyv-nr-Y3r">
+                                <rect key="frame" x="0.0" y="92" width="600" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Pyv-nr-Y3r" id="BS1-xP-mVY">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="xTZ-Xu-POE" id="0a1-BW-W1r"/>
+                            <outlet property="delegate" destination="xTZ-Xu-POE" id="Kju-iB-BkJ"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bF0-GW-XZT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1037" y="292"/>
+        </scene>
+    </scenes>
+</document>
