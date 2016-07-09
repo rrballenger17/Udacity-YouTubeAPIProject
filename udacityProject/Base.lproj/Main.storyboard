@@ -35,31 +35,57 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Description" translatesAutoresizingMaskIntoConstraints="NO" id="QXH-rK-eVB">
+                                <rect key="frame" x="20" y="357" width="510" height="142"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="142" id="Cxk-bO-lLk"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KHP-tg-pPr" customClass="YTPlayerView">
                                 <rect key="frame" x="20" y="20" width="560" height="300"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mPE-1D-T0i">
-                                <rect key="frame" x="20" y="401" width="98" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mPE-1D-T0i">
+                                <rect key="frame" x="20" y="555" width="98" height="30"/>
                                 <state key="normal" title="Add to Playlist"/>
                                 <connections>
                                     <action selector="addToPlaylist:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6QL-Uu-eI7"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sRf-7I-na3">
+                                <rect key="frame" x="28" y="328" width="552" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="xFq-aR-rFa"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="mPE-1D-T0i" secondAttribute="bottom" constant="15" id="5lL-ct-qfs"/>
                             <constraint firstItem="mPE-1D-T0i" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="8RR-5R-L1p"/>
-                            <constraint firstItem="mPE-1D-T0i" firstAttribute="top" secondItem="KHP-tg-pPr" secondAttribute="bottom" constant="40" id="HbE-hI-e4v"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="sRf-7I-na3" secondAttribute="trailing" id="E2R-e1-dsa"/>
                             <constraint firstItem="KHP-tg-pPr" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="NLD-ch-hWb"/>
                             <constraint firstItem="KHP-tg-pPr" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="NeG-i4-gw8"/>
+                            <constraint firstItem="QXH-rK-eVB" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.85" id="OWN-8N-kAF"/>
+                            <constraint firstItem="QXH-rK-eVB" firstAttribute="top" secondItem="sRf-7I-na3" secondAttribute="bottom" constant="8" id="PO6-uc-lIR"/>
                             <constraint firstItem="KHP-tg-pPr" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.5" id="cJH-4i-U2O"/>
+                            <constraint firstItem="QXH-rK-eVB" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="e73-5k-GGz"/>
                             <constraint firstItem="KHP-tg-pPr" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="eYi-gP-Lpk"/>
+                            <constraint firstItem="sRf-7I-na3" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="8" id="fc3-Yf-XME"/>
+                            <constraint firstItem="sRf-7I-na3" firstAttribute="top" secondItem="KHP-tg-pPr" secondAttribute="bottom" constant="8" id="pCp-Sa-brb"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="V90-ks-q3Y"/>
                     <connections>
+                        <outlet property="descrLabel" destination="QXH-rK-eVB" id="a4F-Ng-OhK"/>
                         <outlet property="playerView" destination="KHP-tg-pPr" id="zOj-ux-Ghj"/>
+                        <outlet property="titleLabel" destination="sRf-7I-na3" id="DlZ-b8-TWD"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

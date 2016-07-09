@@ -31,6 +31,11 @@ class ViewController: UIViewController, YTPlayerViewDelegate{
         saveContext()
     }
     
+  
+    
+    @IBOutlet weak var titleLabel: UILabel!
+    @IBOutlet weak var descrLabel: UITextView!
+    
     func saveContext(){
         
         do{
@@ -46,14 +51,21 @@ class ViewController: UIViewController, YTPlayerViewDelegate{
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+                
         // Do any additional setup after loading the view.
         print(videoID)
         
         
-        
-        
+        for s in structs{
+            if s.videoId == videoID {
+                titleLabel.text = s.title
+                descrLabel.text = s.description
+            }
+        }
+
         playerView.loadWithVideoId(videoID)
+        
+        self.automaticallyAdjustsScrollViewInsets = false
     }
  
     

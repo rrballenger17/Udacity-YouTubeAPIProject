@@ -26,7 +26,6 @@ class PlaylistTableViewController: UITableViewController, NSFetchedResultsContro
     }
     
     
-    
     func getSavedVideos(){
         
         let fr = NSFetchRequest(entityName: "PlaylistVideo")
@@ -76,6 +75,18 @@ class PlaylistTableViewController: UITableViewController, NSFetchedResultsContro
             (UIApplication.sharedApplication().delegate as! AppDelegate).videoId = videos[indexPath.row].videoId!
             
             
+            (UIApplication.sharedApplication().delegate as! AppDelegate).structs = []
+            
+            for v in videos{
+                var newStruct = videoInfo()
+                newStruct.title = v.title
+                newStruct.description = v.details
+                newStruct.videoId = v.videoId
+                (UIApplication.sharedApplication().delegate as! AppDelegate).structs.append(newStruct)
+            }
+            
+            
+            
             let view = storyboard!.instantiateViewControllerWithIdentifier("PlayView") as! ViewController
             
             navigationController?.pushViewController(view, animated: true)
@@ -91,7 +102,6 @@ class PlaylistTableViewController: UITableViewController, NSFetchedResultsContro
         saveContext()
         
         videos = nil
-        
         
         self.tableView.reloadData()
         
@@ -118,9 +128,6 @@ class PlaylistTableViewController: UITableViewController, NSFetchedResultsContro
             
             navigationItem.rightBarButtonItem!.tintColor = nil
             
-            
-            
-
         }else{
             
             removeIt = true
@@ -131,7 +138,6 @@ class PlaylistTableViewController: UITableViewController, NSFetchedResultsContro
             
         }
         
-        
         print("remove function")
         
         
@@ -140,8 +146,6 @@ class PlaylistTableViewController: UITableViewController, NSFetchedResultsContro
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        
         
         navigationItem.title = "Playlist"
         

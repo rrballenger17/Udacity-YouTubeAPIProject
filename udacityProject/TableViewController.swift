@@ -14,7 +14,7 @@ class TableViewController: UITableViewController{
         
     var structs: [videoInfo] = (UIApplication.sharedApplication().delegate as! AppDelegate).structs
 
-    var results: [String] = ["hey", "dude", "what's", "up"]
+    //var results: [String] = ["hey", "dude", "what's", "up"]
     
     
     let cellReuseIdentifier = "MyCellReuseIdentifier"
@@ -41,7 +41,6 @@ class TableViewController: UITableViewController{
         
         (UIApplication.sharedApplication().delegate as! AppDelegate).videoId = structs[indexPath.row].videoId
         
-        
         let view = storyboard!.instantiateViewControllerWithIdentifier("PlayView") as! ViewController
         
         navigationController?.pushViewController(view, animated: true)
@@ -53,6 +52,8 @@ class TableViewController: UITableViewController{
     override func viewDidAppear(animated: Bool) {
         
         super.viewDidAppear(animated)
+        
+        
     }
     
     

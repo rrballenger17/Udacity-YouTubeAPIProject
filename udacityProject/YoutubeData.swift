@@ -17,11 +17,13 @@ class YoutubeData {
     
     var structs: [videoInfo] = []
     
+    var apiKey:String = "AIzaSyAA-MIYnX5mFkmcVjXcy8VIeN6ZQ47zk_s"
+    
     func requestData(param: String, sender: SearchViewController, completionHandler: () -> Void) {
         
         let session = NSURLSession.sharedSession()
         
-        var urlString = "https://www.googleapis.com/youtube/v3/search?part=snippet&type=video&maxResults=10&key=AIzaSyAA-MIYnX5mFkmcVjXcy8VIeN6ZQ47zk_s&q=" + param
+        var urlString = "https://www.googleapis.com/youtube/v3/search?part=snippet&type=video&maxResults=10&key=" + apiKey + "&q=" + param
         
         urlString = urlString.stringByAddingPercentEncodingWithAllowedCharacters(NSCharacterSet.URLQueryAllowedCharacterSet())!
         
@@ -32,7 +34,7 @@ class YoutubeData {
             func dataError(error: String) {
                 print(error)
                 
-                let alert = UIAlertController(title: "Data Error", message: "The server returned unrecognized data.", preferredStyle: UIAlertControllerStyle.Alert)
+                let alert = UIAlertController(title: "Data Error", message: "Check server credentials and/or updates.", preferredStyle: UIAlertControllerStyle.Alert)
                 alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.Default, handler: nil))
                 self.performUIUpdatesOnMain(){
                     sender.presentViewController(alert, animated: true, completion: nil)
@@ -62,7 +64,7 @@ class YoutubeData {
             
             /* GUARD: Did we get a successful 2XX response? */
             guard let statusCode = (response as? NSHTTPURLResponse)?.statusCode where statusCode >= 200 && statusCode <= 299 else {
-                connectionError("Your request returned a status code other than 2xx!")
+                dataError("Your request returned a status code other than 2xx!")
                 return
             }
             

@@ -11,7 +11,7 @@ import UIKit
 
 class SearchViewController: UIViewController, UITextFieldDelegate{
     
-    var url = "https://www.googleapis.com/youtube/v3/search?part=snippet&maxResults=10&key=AIzaSyAA-MIYnX5mFkmcVjXcy8VIeN6ZQ47zk_s&q=xbox"
+    
     
     @IBOutlet weak var searchText: UITextField!
     
