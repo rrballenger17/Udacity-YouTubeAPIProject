@@ -19,7 +19,10 @@ class SearchViewController: UIViewController, UITextFieldDelegate{
     
     @IBAction func doSearch(sender: AnyObject) {
         
-        label.text = "Searching..."
+        let activity = UIActivityIndicatorView(activityIndicatorStyle:UIActivityIndicatorViewStyle.Gray)
+        activity.center = self.view.center
+        activity.startAnimating()
+        self.view.addSubview(activity)
         
         
         let ytData = YoutubeData()
@@ -27,6 +30,13 @@ class SearchViewController: UIViewController, UITextFieldDelegate{
         ytData.requestData(searchText.text!, sender: self){() -> Void in
             self.performSegueWithIdentifier("resultsSegue", sender: sender)
             
+            let subs = self.view.subviews
+            
+            for sub in subs{
+                if(sub == activity){
+                    sub.removeFromSuperview()
+                }
+            }
             
         }
         

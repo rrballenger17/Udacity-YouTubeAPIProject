@@ -24,6 +24,19 @@ class ViewController: UIViewController, YTPlayerViewDelegate{
         
         for s in structs{
             if s.videoId == videoID{
+                
+                
+                let controller = PlaylistTableViewController()
+                controller.getSavedVideos()
+                let videos = controller.videos
+                
+                for v in videos{
+                    
+                    if v.videoId == s.videoId{
+                        return
+                    }
+                }
+                
                 PlaylistVideo(title: s.title, videoId: s.videoId, details: s.description, context: stack.context)
             }
         }
